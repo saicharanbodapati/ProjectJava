@@ -1,0 +1,91 @@
+
+  {
+    "applicationName": "userservice",
+    "apiPermissions": [
+      {
+        "uri": "/agents/",
+        "permissionName": "agent_create",
+        "permissionLevel": "Create",
+        "httpMethod": "POST",
+        "comment" : "Allow Create for agent"
+      },
+      {
+        "uri": "/agents/[0-9]+",
+        "permissionName": "agent_edit",
+        "permissionLevel": "Edit",
+        "httpMethod": "PUT",
+        "comment" : "Allow Edit for agent"
+      },
+      {
+        "uri": "/agents/[0-9]+",
+        "permissionName": "agent_view",
+        "permissionLevel": "View",
+        "httpMethod": "GET",
+        "comment" : "Allow View for agent"
+      },
+      {
+        "uri": "/agents/[0-9]+",
+        "permissionName": "agent_delete",
+        "permissionLevel": "Delete",
+        "httpMethod": "DELETE",
+        "comment" : "Allow Delete for agent"
+      },
+      {
+        "uri": "/agents/",
+        "permissionName": "agent_list",
+        "permissionLevel": "Allow",
+        "httpMethod": "GET",
+        "comment" : "Allow get for agent_list"
+      },
+      {
+        "uri": "/agents/[0-9]+/channels/[0-9]+/privileges",
+        "permissionName": "agent_privileges",
+        "permissionLevel": "View",
+        "httpMethod": "GET",
+        "comment" : "Allow View for agent_privileges"
+      },
+      {
+        "uri": "/agents/[0-9]+/password",
+        "permissionName": "agent_change_password",
+        "permissionLevel": "Allow",
+        "httpMethod": "POST, PUT",
+        "comment" : "Allow put and post for agent_change_password"
+      },
+      {
+        "uri": "/agents/current_user.*",
+        "permissionName": "current_user",
+        "permissionLevel": "Allow",
+        "httpMethod": "*",
+        "comment" : "Allow all for current_user"
+      },
+      {
+        "uri": "/agents/search",
+        "permissionName": "agent_search",
+        "permissionLevel": "Allow",
+        "httpMethod": "*",
+        "comment" : "Allow all for agent_search"
+      },
+      {
+        "uri": "/agents/sipStores",
+        "permissionName": "agent_sip_stores",
+        "permissionLevel": "Allow",
+        "httpMethod": "*",
+        "comment" : "Allow all for agent_sip_stores"
+      },
+      {
+        "uri": "/agents/sipStores",
+        "permissionName": "agent_sip_stores",
+        "permissionLevel": "View",
+        "httpMethod": "GET",
+        "comment" : "Allow View for agent_sip_stores"
+      },
+      {
+        "uri": "/agents/cache/.*",
+        "permissionName": "agent_cache_ops",
+        "permissionLevel": "Allow",
+        "httpMethod": "*",
+        "comment" : "Allow all for agent_cache_ops"
+      }
+    ]
+  }
+  
